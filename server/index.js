@@ -12,6 +12,8 @@ const emails = [{
     topic: 'Email 2'
   }]
 
+app.use(express.static('public'));
+
 app.get('/emails', (req, res) => {
     res.send(emails);
 })
